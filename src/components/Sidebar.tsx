@@ -60,8 +60,9 @@ export default function Sidebar({children}: {children: React.ReactNode}) {
               </TransitionChild>
               {/* Sidebar component, swap this element with another sidebar if you like */}
               <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-black px-6 pb-2 ring-1 ring-white/10 border-r border-white shadow shadow-white">
-                <div className="flex h-16 shrink-0 items-center">
-                  <Image src="/anthony.jpeg" alt="Profile" width={32} height={32} className="rounded-full" />
+                <div className="flex flex-col h-16 text-white text-2xl pt-6 underline underline-offset-4">
+                  {/* <Image src="/anthony.jpeg" alt="Profile" width={32} height={32} className="rounded-full" /> */}
+                  Dashboard
                 </div>
                 <nav className="flex flex-1 flex-col">
                   <ul role="list" className="flex flex-1 flex-col gap-y-7">
@@ -76,7 +77,7 @@ export default function Sidebar({children}: {children: React.ReactNode}) {
                                 activeItem === item.name
                                   ? 'bg-gray-800 text-white'
                                   : 'text-gray-400 hover:bg-gray-800 hover:text-white',
-                                'group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold',
+                                'group flex gap-x-3 rounded-md p-2 text-md font-semibold',
                               )}
                             >
                               <item.icon aria-hidden="true" className="size-6 shrink-0" />
@@ -115,7 +116,7 @@ export default function Sidebar({children}: {children: React.ReactNode}) {
                             activeItem === item.name
                               ? 'bg-gray-800 text-white'
                               : 'text-gray-400 hover:bg-gray-800 hover:text-white',
-                            'group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold',
+                            'group flex gap-x-3 rounded-md p-2 text-md font-semibold',
                           )}
                         >
                           <item.icon aria-hidden="true" className="size-6 shrink-0" />
@@ -136,11 +137,12 @@ export default function Sidebar({children}: {children: React.ReactNode}) {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
           <div className="flex-1 text-sm/6 font-semibold text-white">Dashboard</div>
-          <Link href="#">
+        <div className="text-white text-sm/6 font-semibold">Anthony Khoshrozeh</div>
+          {/* <Link href="#">
             <span className="sr-only">Your profile</span>
             <Image src="/anthony.jpeg" alt="Profile" width={32} height={32} priority className="rounded-full" />
              
-          </Link>
+          </Link> */}
         </div>
 
             <main className="flex flex-col items-right lg:w-4/5 ml-auto py-10 px-12 sm:px-24 lg:px-16">
