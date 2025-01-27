@@ -24,9 +24,7 @@ export default function RootLayout({
       <body
         className={lekton.className}
       >
-        <Sidebar>
-          {children}
-        </Sidebar>
+        <Sidebar>{children}</Sidebar>
         
       </body>
     </html>
