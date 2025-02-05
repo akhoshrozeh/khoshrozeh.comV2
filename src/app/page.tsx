@@ -54,7 +54,7 @@ analytics on the job market.
 
       <div className="mt-16">
         <p className="text-white md:text-3xl text-xl">Github Contributions</p>
-        <p className="text-white md:text-xl text-sm">It's going to get greener, I promise.</p>
+        <p className="text-white md:text-xl text-sm">It&apos;s going to get greener, I promise.</p>
       </div>
 
       {/* GitHub Calendar Container */}
